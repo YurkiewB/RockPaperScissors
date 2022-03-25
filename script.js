@@ -1,7 +1,9 @@
-console.log("Hello lets play!")
+console.log("Hello lets play!")//Hello.
+//overall, rps runs the complete game.
 function rockPaperScissors(){
-    let user = prompt("Rock,Paper,or Scissors?", '').toLowerCase();
-    function myPlay(){
+    let user = prompt("Rock,Paper,or Scissors?", '').toLowerCase();//allows the user to input their play.
+    //makes sure the user inputs either rock,paper,or scissors. 
+    function myPlay(){ 
         if (user === "rock"||user==="paper"||user==="scissors") {
             console.log("user played "+ user )
     }           else {
@@ -10,14 +12,14 @@ function rockPaperScissors(){
     }
     myPlay()
 
-    const moves=["rock","paper","scissors"]
-    let cpu=moves[Math.floor(Math.random()* moves.length)]
-    function computerPlay(){
+    const moves=["rock","paper","scissors"]//defines cpu moveset
+    let cpu=moves[Math.floor(Math.random()* moves.length)]//radomizes cpu moveset
+    function computerPlay(){//reports to the console what comp plays
         console.log("computer played "+ cpu)
     }
     computerPlay()
 
-    function game(){
+    function game(){//game conditionals comparing user to cpu. determines winner
         if (user === cpu){
             alert("You and the computer played the same move, go again.");
     }   else if (user==="rock" && cpu==="scissors" ){
@@ -36,7 +38,7 @@ function rockPaperScissors(){
     }
     game()
 }
-
+//retiterates the games multple times!
 for (let i = 0; i < 5; i++){
     rockPaperScissors()
 }
