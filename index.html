@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <title>RockPaperScissors</title>
+    <script src=script.js defer></script>
 </head>
 <body>
-    <script src=script.js></script>
+    <div class="heading">
+        <h1>This is the true test of Man vs. Machines</h1>
+    </div>
+    <div class="gameContext">
+        <h2> This is a simple game of Rock, Paper, and Scissors!<br>
+            However, there is a catch. You must beat the computer in the minnumin of a best of 5<br>
+             in order to stop the eventual MACHINE take over. 
+        </h2>
+    </div>
+    <div class="userChoice">
+        <button id="rock" class="button" onclick="rockPaperScissors()" value="rock"><img src="../rockpaperscissors/images/rock.png"></button>
+        <button id="paper" class="button" onclick="rockPaperScissors()" value="paper"><img src="../rockpaperscissors/images/Paper.png"></button>
+        <button id="scissors" class="button" onclick="rockPaperScissors()" value="scissors"><img src="../rockpaperscissors/images/scissors.png"></button>
+    </div>
+    <div class="gameScore">
+        <div class="scoreText">The score of the game is: </div>
+        <div id="userScore"></div>
+        <div id="compScore"></div>
+     </div>
+    
 </body>
+
 </html>
