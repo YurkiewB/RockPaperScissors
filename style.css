@@ -1,0 +1,15 @@
+body{
+    font-family: 'Audiowide';
+    background-color: black; color: white;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    justify-content:space-evenly;
+}
+.gameScore{
+    border-style: rounded;
+    border-color: white;
+    border-right-width: 10px;
+    display: flex;
+}
