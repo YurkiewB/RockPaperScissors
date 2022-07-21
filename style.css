@@ -1,15 +1,89 @@
+
 body{
-    font-family: 'Audiowide';
-    background-color: black; color: white;
+    font-family:"Audiowide";
+    background-color: #fdf1f0;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-.button{
-    justify-content:space-evenly;
+h1{
+    background-color: blue;
+    margin: auto;
+    width: 450px;
+    font-size:33px
 }
-.gameScore{
-    border-style: rounded;
-    border-color: white;
-    border-right-width: 10px;
+p{
+    color: blue;
+}
+.gameInfo{
+    font-size: 24px;
+    margin-left: 81px;
+    margin-right: 45px;
+}
+
+#gameScore,
+#gameLabel{
     display: flex;
+    justify-content: center;
+    font-size: 35px;
+    gap:100px
 }
+
+#compScore {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 620px;
+}   
+#playScore {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 550px;
+    margin-right: auto;
+}
+
+#rock {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+  }
+  
+  #paper {
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #scissors {
+    padding-left: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-top-width: 0px;
+    border-top-style: solid;
+    padding-top: 0px;
+    border-right-width: 0px;
+    border-right-style: solid;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+  }
+  

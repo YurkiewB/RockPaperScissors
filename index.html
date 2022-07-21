@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-    <title>RockPaperScissors</title>
-    <script src=script.js defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
     <div class="heading">
-        <h1>This is the true test of Man vs. Machines</h1>
+        <h1>Rock | Paper | Scissors</h1>
     </div>
-    <div class="gameContext">
-        <h2> This is a simple game of Rock, Paper, and Scissors!<br>
-            However, there is a catch. You must beat the computer in the minnumin of a best of 5<br>
-             in order to stop the eventual MACHINE take over. 
-        </h2>
+    <div class="gameInfo">
+        <p>Welcome, this is a simple game of Rock, Paper, Scissors. However, the ramifications of 
+             this game are much more serious than that of any other game. The fate of
+             your life as you know it depeneds on the outcome of these rounds,
+            <br> are you ready? </br>
+        </p>
     </div>
-    <div class="userChoice">
-        <button id="rock" class="button" onclick="rockPaperScissors()" value="rock"><img src="../rockpaperscissors/images/rock.png"></button>
-        <button id="paper" class="button" onclick="rockPaperScissors()" value="paper"><img src="../rockpaperscissors/images/Paper.png"></button>
-        <button id="scissors" class="button" onclick="rockPaperScissors()" value="scissors"><img src="../rockpaperscissors/images/scissors.png"></button>
+    <div class="buttons">
+        <button id="rock"><img src='./images/rock.png' alt="rock"></img></button>
+        <button id="paper"><img src='./images/paper.png' alt="paper"></img></button>
+        <button id="scissors"><img src='./images/scissors.png' alt="scissors"></img></button>
     </div>
-    <div class="gameScore">
-        <div class="scoreText">The score of the game is: </div>
-        <div id="userScore"></div>
-        <div id="compScore"></div>
-     </div>
+    <div id="gameLabel">
+        <p class="label">You</p>
+        <p class="label">Computer</p>
+    </div>
+    <div id="gameScore">
+        <div id="playScore" class="score">0</div>
+        <div id="compScore" class="score">0</div>
+    </div>
+    <div id="results"></div>
     
 </body>
-
+<script src=script.js></script>
 </html>
